@@ -1,37 +1,60 @@
 # Advanced Topics
 
-- [Classical Āstika Orthodox Systems](#classical-%C4%81stika-orthodox-systems)
-- [Classical Nāstika Heterodox Systems](#classical-n%C4%81stika-heterodox-systems)
-- [Later Developments and Comparative Perspectives](#later-developments-and-comparative-perspectives)
+- [Advanced Epistemology, Logic, and Navya-Nyāya](#advanced-epistemology-logic-and-navya-nyāya)
+- [Philosophy of Language, Semantics, and Hermeneutics](#philosophy-of-language-semantics-and-hermeneutics)
+- [Advanced Metaphysics, Philosophy of Mind, and Non-Dualisms](#advanced-metaphysics-philosophy-of-mind-and-non-dualisms)
+- [Moral, Legal, and Political Philosophy](#moral-legal-and-political-philosophy)
+- [Cross-Cultural, Analytic, and Contemporary Engagements](#cross-cultural-analytic-and-contemporary-engagements)
 
-After finishing the Core (sections I and II), you reach the point where the roadmap branches. The remaining sections are **specialization tracks** that explore specific schools, periods, or comparative angles in much greater depth.
+## How to Use These Specialization Tracks
 
-- **Classical Āstika (Orthodox) Systems**: Dive into the six major “orthodox” schools (Nyāya-Vaiśeṣika, Sāṃkhya-Yoga, Mīmāṃsā, Vedānta) that accept Vedic authority.
-- **Classical Nāstika (Heterodox) Systems**: Explore the major traditions that reject Vedic authority (mainly Buddhism, Jainism, Cārvāka materialism).
-- **Later Developments and Comparative Perspectives**: Look at medieval debate traditions, modern Indian thinkers (19th–20th century), and conversations between Indian and Western philosophy.
+Once you have mastered the core systems (*Darśanas*) and shared frameworks of Indian philosophy, choose one or more specialization tracks depending on your research trajectory:
 
-## Classical Āstika (Orthodox) Systems
+- **Advanced Epistemology, Logic, and Navya-Nyāya:** Explores formal theories of inference, epistemic justification, radical nominalism, and the technical language of late classical scholastic logic.
+- **Philosophy of Language, Semantics, and Hermeneutics:** Investigates how Sanskrit philosophers theorized sentence meaning, compositionality, negative semantics (*apoha*), and aesthetic suggestion (*rasa-dhvani*).
+- **Advanced Metaphysics, Philosophy of Mind, and Non-Dualisms:** Dives deep into Buddhist anti-essentialism, Yogācāra consciousness studies, dialectical Advaita Vedānta, and the dynamic monism of Kashmir Shaivism.
+- **Moral, Legal, and Political Philosophy:** Examines ethical dilemmas in epic literature, statecraft and jurisprudence (*dharmaśāstra* / *arthaśāstra*), and modern socio-political thought.
+- **Cross-Cultural, Analytic, and Contemporary Engagements:** Bridges classical Indian insights with contemporary analytic philosophy of mind, cognitive science, and global philosophy.
 
-| Subject | Book/Text | Online Course |
+## Advanced Epistemology, Logic, and Navya-Nyāya
+
+| Topic | Why Study | Resources |
 | --- | --- | --- |
-| 6. Nyāya and Vaiśeṣika: Logic, ontology, debate | **[*Nyāya Sūtra* (Archive.org – English translation by Ganganatha Jha)](https://archive.org/details/the-nyaya-sutras-of-gautama-with-english-notes-1-ganganatha-jha)** | |
-| 7. Sāṃkhya and Yoga: Dualism, cosmology, liberation praxis | **[Radhakrishnan & Moore – *A Source Book in Indian Philosophy* (Archive.org)](https://archive.org/details/sourcebookinindi00radh)** | |
-| 8. Mīmāṃsā: Ritual, language, hermeneutics | **[Dasgupta – *History of Indian Philosophy, Vol. I* (Archive.org)](https://archive.org/details/in.gov.ignca.8897)** | Introduction to Mīmāṃsā (YouTube – Banaras Hindu University) |
-| 9. Vedānta (Survey): Advaita, Viśiṣṭādvaita, Dvaita | **[Dasgupta – *History of Indian Philosophy, Vol. III* (Archive.org)](https://archive.org/details/in.ernet.dli.2015.150038)** | **[Introduction to Vedānta Philosophy playlist (YouTube – various scholarly series)](https://www.youtube.com/playlist?list=PLkBHn0LCZEgiaVDQCz21Tfs8BVfWU8X_g)** (related Upanishads/Vedanta intro series) |
+| Pramāṇa Theory, Factivism, and Justification | Investigates foundational conditions of knowing, factive cognition, and the debate between intrinsic (*svataḥ-prāmāṇya*) and extrinsic (*parataḥ-prāmāṇya*) justification. | - Bimal Krishna Matilal – *The Character of Logic in India* (SUNY Press)<br>- Stephen Phillips – *Epistemology in Classical India: The Knowledge Sources of the Nyāya School* (Routledge)<br>- [Stanford Encyclopedia of Philosophy – *Epistemology in Classical Indian Philosophy*](https://plato.stanford.edu/entries/epistemology-india/) |
+| The Buddhist Epistemological Revolution (Dignāga & Dharmakīrti) | Examines the epistemological turn in Buddhist thought, focusing on the reduction of knowledge sources to perception and inference, nominalist particulars (*svalakṣaṇa*), and causal efficacy (*arthakriyāsāmarthya*). | - Georges B. J. Dreyfus – *Recognizing Reality: Dharmakīrti's Philosophy and Its Tibetan Interpretations* (SUNY Press)<br>- Dan Arnold – *Buddhists, Brahmins, and Belief: Epistemology in South Asian Philosophy of Religion* (Columbia University Press)<br>- [Stanford Encyclopedia of Philosophy – *Dharmakīrti*](https://plato.stanford.edu/entries/dharmakirti/) |
+| Navya-Nyāya Logic and Formal Language | Analyzes the precise technical apparatus invented by Gaṅgeśa and later Naiyāyikas to eliminate ambiguity in logic, focusing on pervasion (*vyāpti*), relations, and the ontology of absence (*abhāva*). | - Bimal Krishna Matilal – *The Navya-Nyāya Doctrine of Negation* (Harvard University Press)<br>- Daniel H. H. Ingalls – *Materials for the Study of Navya-Nyāya Logic* (Harvard University Press)<br>- [Stanford Encyclopedia of Philosophy – *Gaṅgeśa*](https://plato.stanford.edu/entries/gangesa/)<br>- [Stanford Encyclopedia of Philosophy – *Analytic Philosophy in Early Modern India*](https://plato.stanford.edu/entries/analytic-india/) |
+| Theories of Perceptual Error (*Khyātivāda*) | Explores how rival traditions account for misperception, hallucination, and illusion (*anyathākhyāti*, *anirvacanīyakhyāti*, *ātmakhyāti*, *akhyāti*), probing the intentionality of consciousness. | - Bimal Krishna Matilal – *Perception: An Essay on Classical Indian Theories of Knowledge* (Oxford Clarendon Press)<br>- [Stanford Encyclopedia of Philosophy – *Perceptual Experience and Concepts in Classical Indian Philosophy*](https://plato.stanford.edu/entries/perception-india/) |
 
-## Classical Nāstika (Heterodox) Systems
+## Philosophy of Language, Semantics, and Hermeneutics
 
-| Subject | Book/Text | Online Course |
+| Topic | Why Study | Resources |
 | --- | --- | --- |
-| 10. Buddhism: Foundations: Four Noble Truths, no-self, impermanence | **[*The Fundamental Wisdom of the Middle Way* (Nāgārjuna) (Archive.org – Garfield translation)](https://archive.org/details/NagarjunaTheFundamentalWisdomOfTheMiddleWay)** | |
-| 11. Buddhist Schools: Madhyamaka, Yogācāra | **[History of Philosophy Without Any Gaps – Classical Indian Philosophy](https://historyofphilosophy.net/series/classical-indian-philosophy)** | 
-| 12. Jain Philosophy: Anekāntavāda, syādvāda, ethics | (Reference) **[Stanford Encyclopedia of Philosophy – Jain Philosophy](https://plato.stanford.edu/entries/jaina-philosophy/)** | |
-| 13. Cārvāka (Materialism): Skepticism, empiricism | **[Source Book in Indian Philosophy (relevant sections – Archive.org)](https://archive.org/details/sourcebookinindi00radh)** | |
+| The *Sphoṭa* Doctrine and Linguistic Holism (Bhartṛhari) | Examines Bhartṛhari’s *Vākyapadīya*, exploring linguistic monism (*Śabda-brahman*), sentence-meaning holism (*akhaṇḍa-vākya-sphoṭa*), and the inseparability of thought from language. | - Bhartṛhari – *The Vākyapadīya of Bhartṛhari* (trans. K. A. Subramania Iyer, Motilal Banarsidass)<br>- Bimal Krishna Matilal – *The Word and the World: India's Contribution to the Study of Language* (Oxford University Press)<br>- Malcolm Keating – *Language, Meaning, and Use in Indian Philosophy: An Introduction to Mukula's Fundamentals of the Communicative Function* (Bloomsbury) |
+| Mīmāṃsā Hermeneutics and Sentence Compositionality | Analyzes classical debates on compositional semantics, contrasting the Prabhākara theory of connected designation (*anvitābhidhānavāda*) with the Bhāṭṭa theory of designated connection (*abhihitānvayavāda*). | - K. Kunjunni Raja – *Indian Theories of Meaning* (Adyar Library and Research Centre)<br>- John Taber – *A Hindu Critique of Buddhist Epistemology: Kumārila on Perception* (Routledge)<br>- [Stanford Encyclopedia of Philosophy – *The Literal-Nonliteral Distinction in Classical Indian Philosophy*](https://plato.stanford.edu/entries/literal-nonliteral-india/) |
+| Buddhist Nominalism and Negative Semantics (*Apoha-vāda*) | Investigates how Buddhist nominalists explain general terms and conceptual thought without positing real ontological universals, defining meaning as the exclusion of opposites (*anyāpoha*). | - Mark Siderits, Tom Tillemans, and Arindam Chakrabarti (eds.) – *Apoha: Buddhist Nominalism and Human Cognition* (Columbia University Press)<br>- B. K. Matilal and R. D. Evans (eds.) – *Buddhist Logic and Epistemology* (Springer) |
+| Sanskrit Poetics, Rhetoric, and Aesthetic Suggestion (*Dhvani* & *Rasa*) | Explores how meaning transcends literal and metaphorical operations to produce aesthetic experience (*rasa*) through semantic suggestion (*dhvani*), centered on Ānandavardhana and Abhinavagupta. | - Ānandavardhana and Abhinavagupta – *The Dhvanyāloka with the Locana* (trans. Daniel H. H. Ingalls, J. M. Masson, and M. V. Patwardhan, Harvard University Press)<br>- Arindam Chakrabarti (ed.) – *The Bloomsbury Research Handbook of Indian Aesthetics and the Philosophy of Art* (Bloomsbury) |
 
-## Later Developments and Comparative Perspectives
+## Advanced Metaphysics, Philosophy of Mind, and Non-Dualisms
 
-| Subject | Book/Text | Online Course |
+| Topic | Why Study | Resources |
 | --- | --- | --- |
-| 14. Logic and Debate Traditions: Vāda, hetvābhāsa, inter-school polemics | **[Nyāya Sūtra (commentarial sections – Archive.org)](https://archive.org/details/the-nyaya-sutras-of-gautama-with-english-notes-1-ganganatha-jha)** | |
-| 15. Modern Indian Philosophy: Vivekananda, Aurobindo, Gandhi, Tagore | (Reference) Internet Encyclopedia of Philosophy – Modern Indian Philosophy | **[NPTEL – Philosophy and Critical Thinking](https://onlinecourses.nptel.ac.in/noc24_hs75/preview)** (includes modern perspectives) |
-| 16. Comparative Indian Philosophy: Indian philosophy in dialogue with Greek and modern Western thought | **[History of Philosophy Without Any Gaps – India & Beyond](https://historyofphilosophy.net/series/classical-indian-philosophy)** | |
+| Madhyamaka Dialectic and Radical Anti-Essentialism | Studies Nāgārjuna’s critique of intrinsic nature (*svabhāva*), the Prāsaṅgika-Svātantrika methodological divide (Candrakīrti vs. Bhāviveka), and the philosophical architecture of the Two Truths. | - Jan Westerhoff – *Nāgārjuna's Metaphysics: A Philosophical Investigation* (Oxford University Press)<br>- Mark Siderits and Shōryū Katsura – *Nāgārjuna's Middle Way: Mūlamadhyamakakārikā* (Wisdom Publications)<br>- [Stanford Encyclopedia of Philosophy – *The Theory of Two Truths in India*](https://plato.stanford.edu/entries/twotruths-india/) |
+| Yogācāra Phenomenology and Reflexive Consciousness | Investigates the mind-only (*vijñaptimātra*) model of intentionality, the eight consciousnesses (including *ālayavijñāna*), and self-intimating awareness (*svasaṃvedana*). | - Dan Lusthaus – *Buddhist Phenomenology: A Philosophical Investigation of Yogācāra Buddhism* (Routledge)<br>- Christian Coseru – *Perceiving Reality: Consciousness, Intentionality, and Cognition in Buddhist Philosophy* (Oxford University Press)<br>- [Stanford Encyclopedia of Philosophy – *Mind in Indian Buddhist Philosophy*](https://plato.stanford.edu/entries/mind-indian-buddhism/) |
+| Dialectical Advaita and the Refutation of Realism | Analyzes post-Śaṅkara dialectical Vedānta, focusing on Śrīharṣa’s *Khaṇḍanakhaṇḍakhādya*, Citsukha’s defense of self-luminosity (*svaprakāśa*), and the epistemological critique of difference (*bheda*). | - Phyllis Granoff – *Philosophy and Argument in Late Vedānta: Śrī Harṣa's Khaṇḍanakhaṇḍakhādya* (Reidel/Kluwer)<br>- Jonardon Ganeri – *The Concealed Art of the Soul: Theories of Self and Practices of Truth in Indian Ethics and Epistemology* (Oxford University Press)<br>- [Stanford Encyclopedia of Philosophy – *Śrīharṣa*](https://plato.stanford.edu/entries/sriharsa/) |
+| Pratyabhijñā: Non-Dual Dynamic Monism (Kashmir Shaivism) | Explores the Trika non-dual metaphysics of Utpaladeva and Abhinavagupta, where consciousness is characterized by self-luminous awareness (*prakāśa*) and active self-reflective dynamic power (*vimarśa*). | - Utpaladeva – *The Īśvarapratyabhijñākārikā with the Vṛtti* (trans. Raffaele Torella, Motilal Banarsidass)<br>- David Peter Lawrence – *Rediscovering God with Transcendental Argument: A Contemporary Interpretation of Monistic Kashmiri Śaiva Philosophy* (SUNY Press) |
+
+## Moral, Legal, and Political Philosophy
+
+| Topic | Why Study | Resources |
+| --- | --- | --- |
+| Ethics, Conflict, and Agency in the Epics and Dharmaśāstra | Investigates irreconcilable moral dilemmas (*dharma-saṃkaṭa*), non-violence versus duty, and moral luck across the *Mahābhārata*, *Rāmāyaṇa*, and classical legal literature. | - Bimal Krishna Matilal – *Ethics and Epics: The Collected Essays of Bimal Krishna Matilal, Vol. II* (Oxford University Press)<br>- Matthew R. Dasti and Edwin F. Bryant (eds.) – *Free Will, Agency, and Selfhood in Indian Philosophy* (Oxford University Press)<br>- [Stanford Encyclopedia of Philosophy – *Ethics in Indian Buddhism*](https://plato.stanford.edu/entries/ethics-indian-buddhism/) |
+| Political Realism and Statecraft (*Arthaśāstra* Tradition) | Examines Kauṭilya's foundational theories of sovereignty, political pragmatism, state intelligence, and international relations (*maṇḍala* theory). | - Kauṭilya – *The Arthaśāstra* (trans. Patrick Olivelle, Oxford World's Classics)<br>- Thomas R. Trautmann – *Arthashastra: The Science of Wealth* (Penguin India) |
+| Modern Indian Political and Social Thought | Analyzes how 19th- and 20th-century Indian thinkers re-articulated autonomy, caste critique, non-violence, and nationalism in dialogue with Western political philosophy. | - B. R. Ambedkar – *Annihilation of Caste: The Annotated Critical Edition* (ed. S. Anand, Verso)<br>- M. K. Gandhi – *Hind Swaraj and Other Writings* (ed. Anthony J. Parel, Cambridge Texts in the History of Political Thought)<br>- Akeel Bilgrami – *Secularism, Identity, and Enchantment* (Harvard University Press) |
+
+## Cross-Cultural, Analytic, and Contemporary Engagements
+
+| Topic | Why Study | Resources |
+| --- | --- | --- |
+| The Self and Mind in Cognitive Science and Contemporary Philosophy | Evaluates the classical Indian debate between substantialist selves (Nyāya, Vedānta) and bundle/no-self accounts (Buddhism) in dialogue with contemporary neurophilosophy and personal identity theory. | - Jonardon Ganeri – *The Self: Naturalism, Consciousness, and the First-Person Stance* (Oxford University Press)<br>- Evan Thompson – *Waking, Dreaming, Being: Self and Consciousness in Neuroscience, Meditation, and Philosophy* (Columbia University Press)<br>- [Stanford Encyclopedia of Philosophy – *Personhood in Classical Indian Philosophy*](https://plato.stanford.edu/entries/personhood-india/) |
+| Comparative Analytic Epistemology | Engages Indian models of epistemic luck, disjunctivism, testimonial warrant, and externalism with contemporary analytic epistemology (Gettier, Williamson, and Sosa). | - Jonardon Ganeri (ed.) – *The Oxford Handbook of Indian Philosophy* (Oxford University Press)<br>- Arindam Chakrabarti – *Realisms Interlinked: Objects, Subjects and Other Subjects* (Bloomsbury Academic)<br>- Stephen H. Phillips – *Epistemology in Classical India* (Routledge) |
+| Metaphilosophy, Historiography, and Decolonizing Indian Philosophy | Explores the historiography of Indian philosophy, critiques Eurocentric assumptions about reason and modernity, and examines methods for constructive global philosophizing. | - Jonardon Ganeri – *Philosophy in Classical India: The Proper Work of Reason* (Routledge)<br>- Daya Krishna – *Indian Philosophy: A Counter Perspective* (Oxford University Press)<br>- J. N. Mohanty – *Reason and Tradition in Indian Thought* (Oxford Clarendon Press) |

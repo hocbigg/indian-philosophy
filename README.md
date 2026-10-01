@@ -5,11 +5,34 @@ description: Path to a free self-taught education in Indian Philosophy!
 
 ## Introduction
 
-The Indian Philosophy curriculum is a **complete education in Indian Philosophy** using online materials.
+Classical Indian philosophy is an intensely argumentative, highly systematic tradition that spans more than two millennia. Rather than a set of isolated mystical reflections, Indian thought developed through rigorous inter-school debates conducted under strict epistemic standards. Thinkers across competing traditions interrogated the nature of valid knowledge (*pramāṇa*), personal identity, causality, perception, linguistic meaning, and the human good. Studying this tradition offers sophisticated alternatives to Western frameworks of mind and reality, presenting realism without physicalism, reductionism without materialism, and non-dualism without dogmatic monotheism.
 
-## Communities
+This curriculum is intended for independent learners with no prior formal background in Indian philosophy, South Asian history, or Sanskrit. It covers the core undergraduate-level foundations that every student of the discipline needs before moving on to specialized subfields or historical periods. Technical terms—such as *darśana* (philosophical perspective or school), *ātman* (the enduring self), *dharma* (duty, moral order, or fundamental constituent), and *mokṣa* (spiritual liberation)—are explained systematically from first principles within the recommended texts and lectures.
 
-- You can  interact through [GitHub issues](https://github.com/hocbigg/indian-philosophy/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
+The curriculum does not attempt to cover modern academic research methodologies, philological textual criticism, or niche regional traditions. Its objective is conceptual: to give you a clear, working grasp of the primary schools, their core arguments, and how they answered one another.
+
+### How to Move Through the Material
+
+The subjects are organized into four sequential phases that mirror the historical and dialectical emergence of the tradition. Because later systems formulate their arguments in direct response to earlier critiques, studying the curriculum in this order prevents confusion:
+
+- **Foundations: Orientation and Historical Context:** Begin here to establish essential philosophical vocabulary, examine the root questions of the early Upaniṣads, and understand the historical criteria that divide traditions into orthodox (*āstika*) and heterodox (*nāstika*) schools.
+- **Heterodox Traditions (Nāstika Systems):** Study the traditions that rejected Vedic scriptural authority: the empiricist materialism of Cārvāka, the perspectival pluralism of Jainism, and the Buddhist deconstruction of the substantial self (*anattā*). Understanding these heterodox critiques is crucial, as they catalyzed the defensive and systematic formalization of the orthodox schools.
+- **Orthodox Traditions (Āstika Systems):** Examine the six classical Brahmanical systems (*Ṣaḍ-darśana*), which are traditionally grouped into complementary pairs: Nyāya logic paired with Vaiśeṣika categorical ontology, Sāṃkhya dualism paired with Classical Yoga's mental discipline, and Mīmāṃsā linguistic hermeneutics paired with Vedāntic metaphysics.
+- **Shared Frameworks and Cross-Cutting Debates:** Conclude by synthesizing what you have learned through thematic, inter-school debates. Here, you will directly compare how rival traditions contested the instruments of valid knowledge (*pramāṇa-vāda*), theories of perceptual error (*khyātivāda*), models of causation, and the path to liberation.
+
+For each subject, you can treat comprehensive textbooks and video lectures as complementary tools: use the video courses for an accessible initial walkthrough of the concepts, and turn to the corresponding book chapters for structured textual analysis.
+
+### Beyond the Core
+
+Once you have completed these foundational subjects, you can explore the other guides in this series to continue your studies:
+
+- Visit [Advanced Topics](advanced_topics.md) to explore specialized tracks such as Navya-Nyāya formal logic, Buddhist nominalist semantics (*apoha-vāda*), late dialectical Advaita, and classical political realism.
+- Browse [Readings](extras/readings.md) for landmark primary texts, classical commentaries, and influential twentieth-century scholarly monographs.
+- Explore [Courses](extras/courses.md) for full-length audiovisual lecture series and university open courseware.
+
+### Communities
+
+- You can interact through [GitHub issues](https://github.com/hocbigg/indian-philosophy/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
 
 ## Curriculum
 
@@ -25,7 +48,6 @@ This subject introduces the defining characteristics of Indian philosophy, explo
 
 [Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)](https://historyofphilosophy.net/india) - A complementary audio lecture series that contextualizes Indian thought within the broader global history of ideas, beginning with introductory reflections on the tradition's aims.
 
-
 ### Vedic and Upaniṣadic Foundations
 
 This subject examines the foundational concepts of cosmic order (*ṛta*), ultimate reality (*brahman*), the inner self (*ātman*), and the historical emergence of the orthodox (*āstika*) and heterodox (*nāstika*) divide.
@@ -35,7 +57,6 @@ This subject examines the foundational concepts of cosmic order (*ṛta*), ultim
 [Upanisads (Oxford World's Classics / Patrick Olivelle)](https://books.google.com/books?isbn=9780199540259) - The canonical English translation of the principal Upaniṣads; study this primary source alongside Hiriyanna to examine key dialogues concerning Brahman and Ātman firsthand.
 
 [Hinduism Through Its Scriptures (HarvardX / Parimal Patil)](https://www.edx.org/learn/religion/harvard-university-hinduism-through-its-scriptures) - A free audit-mode course that provides complementary video lectures and guided textual readings on the Vedas, the Upaniṣads, and their enduring philosophical themes.
-
 
 ### Cārvāka: Materialism and Epistemic Empiricism
 
@@ -47,7 +68,6 @@ This subject explores the radical empiricism, metaphysical physicalism, skeptici
 
 [Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)](https://historyofphilosophy.net/india) - Episode 11 ("Mind the Gap: The Cārvākas") offers an accessible conversational overview examining why orthodox opponents took materialist challenges so seriously.
 
-
 ### Jaina Philosophy: Pluralistic Realism and Standpoint Epistemology
 
 This subject covers the Jaina dualism between conscious souls (*jīva*) and non-conscious entities (*ajīva*), the doctrine of multi-sided reality (*anekāntavāda*), the logic of qualified assertions (*syādvāda*), and ethical non-harm (*ahiṃsā*).
@@ -57,7 +77,6 @@ This subject covers the Jaina dualism between conscious souls (*jīva*) and non-
 [Indian Philosophy (NPTEL / IIT Madras / Dr. Satya Sundar Sethy)](https://nptel.ac.in/courses/109106059) - Lectures 29 through 31 offer a structured academic exposition of Jaina epistemology, focusing on the sevenfold predication scheme (*saptabhaṅgī-naya*).
 
 [Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)](https://historyofphilosophy.net/india) - Episodes 12 through 14 serve as a conceptual audio companion, breaking down how Jaina standpoint epistemology resolves seemingly conflicting philosophical assertions.
-
 
 ### Buddhist Philosophy: Dependent Origination, Non-Self, and Emptiness
 
@@ -69,7 +88,6 @@ This subject traces early Buddhist doctrines of suffering and causality, the red
 
 [Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)](https://historyofphilosophy.net/india) - Episodes 15 through 24 provide an expansive, complementary audio lecture sequence detailing the transition from early Abhidharma metaphysics to Nāgārjuna’s dialectic and Vasubandhu’s idealism.
 
-
 ### Nyāya: Epistemology, Logic, and the Syllogism
 
 This subject covers the Nyāya realistic epistemology, the validation of the four sources of knowledge (*pramāṇas*), the formal structure of the five-step inference (*anumāna*), and the taxonomy of fallacies (*hetvābhāsa*).
@@ -79,7 +97,6 @@ This subject covers the Nyāya realistic epistemology, the validation of the fou
 [The Character of Logic in India (SUNY Press / Bimal Krishna Matilal)](https://books.google.com/books?isbn=9780791437407) - A concise, modern text that complements Chatterjee by analyzing the development of Indian debate rules, the nature of the inductive sign, and the formal structure of the Nyāya syllogism.
 
 [Indian Philosophy (NPTEL / IIT Madras / Dr. Satya Sundar Sethy)](https://nptel.ac.in/courses/109106059) - Lectures 15 through 20 deliver sequential classroom instruction illustrating the step-by-step operation of the five-membered Nyāya inferential argument.
-
 
 ### Vaiśeṣika: Categorical Ontology and Atomism
 
@@ -91,7 +108,6 @@ This subject explores the Vaiśeṣika ontology of the seven categories of reali
 
 [Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)](https://historyofphilosophy.net/india) - Episodes 29 through 31 provide an accessible companion discussion comparing Vaiśeṣika atomism and categorical realism with Western metaphysics.
 
-
 ### Sāṃkhya: Dualistic Metaphysics and Cosmic Evolution
 
 This subject examines the metaphysical dualism between pure consciousness (*puruṣa*) and primordial matter (*prakṛti*), the three constitutive strands (*guṇas*), and the pre-existence of the effect within the cause (*satkāryavāda*).
@@ -101,7 +117,6 @@ This subject examines the metaphysical dualism between pure consciousness (*puru
 [The Essentials of Indian Philosophy (George Allen & Unwin / M. Hiriyanna)](https://archive.org/details/in.ernet.dli.2015.506393) - Chapter 5 offers a concise, complementary historical overview that clarifies how Sāṃkhya dualism differs from Cartesian dualism and prepares the conceptual ground for classical Yoga.
 
 [Indian Philosophy (NPTEL / IIT Madras / Dr. Satya Sundar Sethy)](https://nptel.ac.in/courses/109106059) - Lectures 5 through 10 provide an in-depth video lecture series explaining the Sāṃkhya proof for *satkāryavāda* and the teleological unfolding of nature.
-
 
 ### Classical Yoga: Psychology and Mental Discipline
 
@@ -113,7 +128,6 @@ This subject addresses Patañjali’s system of psychological analysis, the cess
 
 [Indian Philosophy (NPTEL / IIT Madras / Dr. Satya Sundar Sethy)](https://nptel.ac.in/courses/109106059) - Lectures 11 through 14 provide structured lectures explaining the relationship between Sāṃkhya metaphysics and Yoga's practical methods for calming mental modifications.
 
-
 ### Mīmāṃsā: Hermeneutics, Language, and Epistemic Validity
 
 This subject examines Pūrva-Mīmāṃsā’s principles of textual interpretation, the eternal nature of the word-meaning relationship, the theory that cognitions are intrinsically valid (*svataḥ-prāmāṇyavāda*), and the nature of moral injunctions (*vidhi*).
@@ -123,7 +137,6 @@ This subject examines Pūrva-Mīmāṃsā’s principles of textual interpretati
 [Indian Philosophy (NPTEL / IIT Madras / Dr. Satya Sundar Sethy)](https://nptel.ac.in/courses/109106059) - Lectures 38 through 40 provide detailed video lectures contrasting how Kumārila Bhaṭṭa and Prabhākara explain the emergence and invalidation of erroneous beliefs.
 
 [Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)](https://historyofphilosophy.net/india) - Episodes 40 and 41 supply an intuitive audio introduction explaining why Mīmāṃsā philosophers defended the default validity of human cognition and scriptural authority.
-
 
 ### Vedānta: Non-Dualism, Qualified Non-Dualism, and Dualism
 
@@ -135,7 +148,6 @@ This subject explores the major theological and philosophical interpretations of
 
 [Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)](https://historyofphilosophy.net/india) - Episodes 45 through 54 provide a thorough audio lecture series tracing the debate over whether the individual soul is identical to, an attribute of, or eternally distinct from the Divine.
 
-
 ### Comparative Indian Epistemology: Pramāṇas and Theories of Error
 
 This subject synthesizes knowledge across traditions by examining inter-school debates on what constitutes a valid instrument of knowing (*pramāṇa*), the definition of truth, and rival explanations of perceptual illusion (*khyātivāda*).
@@ -146,7 +158,6 @@ This subject synthesizes knowledge across traditions by examining inter-school d
 
 [Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)](https://historyofphilosophy.net/india) - Episodes 28 and 30 serve as a lecture companion illustrating the high-stakes debates over whether knowledge can be acquired through testimony and how perceptual errors are recognized.
 
-
 ### Comparative Metaphysics: Self, Causality, and World
 
 This subject investigates the central metaphysical disputes running through classical Indian thought, particularly the substantial self (*ātman*) versus no-self (*anattā*) debate and rival models of causation (*satkāryavāda*, *asatkāryavāda*, and *pratītyasamutpāda*).
@@ -156,7 +167,6 @@ This subject investigates the central metaphysical disputes running through clas
 [Outlines of Indian Philosophy (George Allen & Unwin / M. Hiriyanna)](https://archive.org/details/in.gov.ignca.8889) - An open-access classic that provides a complementary historical treatment tracking how different causal doctrines directly shaped each school's view of liberation.
 
 [Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)](https://historyofphilosophy.net/india) - Episodes 26 and 30 provide a lively audio discussion exploring the dialectical battle lines drawn between Buddhist nominalists and Brahmanical essentialists.
-
 
 ### Ethics, Action, and Liberation: Dharma, Karma, and Mokṣa
 

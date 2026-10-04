@@ -1,149 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Hocbigg - Indian Philosophy</title>
-<link rel="stylesheet" href="/indian-philosophy/style.css">
-<meta name="description" content="Path to a free self-taught education in Indian Philosophy!">
+  <title>Hocbigg - Indian Philosophy</title>
+  <meta name="description" content="Path to a free self-taught education in Indian Philosophy!">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/indian-philosophy/">
+  <link rel="canonical" href="https://hocbigg.github.io/indian-philosophy/">
+  <meta property="og:title" content="Hocbigg - Indian Philosophy">
+  <meta property="og:description" content="Path to a free self-taught education in Indian Philosophy!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/indian-philosophy/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Hocbigg - Indian Philosophy">
-<meta property="og:description" content="Path to a free self-taught education in Indian Philosophy!">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/indian-philosophy/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/indian-philosophy/">Indian-Philosophy</a>
-<a href="/indian-philosophy/advanced_topics.html">Advanced Topics</a>
-<a href="/indian-philosophy/projects.html">Projects</a>
-<a href="/indian-philosophy/extras/courses.html">Extra Courses</a>
-<a href="/indian-philosophy/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/indian-philosophy/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/indian-philosophy/">Indian Philosophy</a></li>
+      <li><a href="/indian-philosophy/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/indian-philosophy/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/indian-philosophy/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/indian-philosophy" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
+  <main id="main-content">
+    <article>
 <header class="page-header">
-  <img src="/images/logo.png" alt="">
+  <img src="/images/logo.png" alt="Hocbigg logo">
   <h1>Hocbigg - Indian Philosophy</h1>
+  <p class="page-subtitle">Path to a free self-taught education in Indian Philosophy!</p>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-10-01">2026-10-01</time></small></p>
 </header>
-
-<h1 id="contents">Contents</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Classical Indian philosophy is an intensely argumentative, highly systematic tradition that spans more than two millennia. Rather than a set of isolated mystical reflections, Indian thought developed through rigorous inter-school debates conducted under strict epistemic standards. Thinkers across competing traditions interrogated the nature of valid knowledge (<em>pramāṇa</em>), personal identity, causality, perception, linguistic meaning, and the human good. Studying this tradition offers sophisticated alternatives to Western frameworks of mind and reality, presenting realism without physicalism, reductionism without materialism, and non-dualism without dogmatic monotheism.</p>
+<p>This curriculum is intended for independent learners with no prior formal background in Indian philosophy, South Asian history, or Sanskrit. It covers the core undergraduate-level foundations that every student of the discipline needs before moving on to specialized subfields or historical periods. Technical terms—such as <em>darśana</em> (philosophical perspective or school), <em>ātman</em> (the enduring self), <em>dharma</em> (duty, moral order, or fundamental constituent), and <em>mokṣa</em> (spiritual liberation)—are explained systematically from first principles within the recommended texts and lectures.</p>
+<p>The curriculum does not attempt to cover modern academic research methodologies, philological textual criticism, or niche regional traditions. Its objective is conceptual: to give you a clear, working grasp of the primary schools, their core arguments, and how they answered one another.</p>
+<h3 id="how-to-move-through-the-material">How to Move Through the Material</h3>
+<p>The subjects are organized into four sequential phases that mirror the historical and dialectical emergence of the tradition. Because later systems formulate their arguments in direct response to earlier critiques, studying the curriculum in this order prevents confusion:</p>
 <ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#communities">Communities</a></li>
-<li><a href="#curriculum">Curriculum</a></li>
-<li><a href="#code-of-conduct">Code of conduct</a></li>
+<li><strong>Foundations: Orientation and Historical Context:</strong> Begin here to establish essential philosophical vocabulary, examine the root questions of the early Upaniṣads, and understand the historical criteria that divide traditions into orthodox (<em>āstika</em>) and heterodox (<em>nāstika</em>) schools.</li>
+<li><strong>Heterodox Traditions (Nāstika Systems):</strong> Study the traditions that rejected Vedic scriptural authority: the empiricist materialism of Cārvāka, the perspectival pluralism of Jainism, and the Buddhist deconstruction of the substantial self (<em>anattā</em>). Understanding these heterodox critiques is crucial, as they catalyzed the defensive and systematic formalization of the orthodox schools.</li>
+<li><strong>Orthodox Traditions (Āstika Systems):</strong> Examine the six classical Brahmanical systems (<em>Ṣaḍ-darśana</em>), which are traditionally grouped into complementary pairs: Nyāya logic paired with Vaiśeṣika categorical ontology, Sāṃkhya dualism paired with Classical Yoga's mental discipline, and Mīmāṃsā linguistic hermeneutics paired with Vedāntic metaphysics.</li>
+<li><strong>Shared Frameworks and Cross-Cutting Debates:</strong> Conclude by synthesizing what you have learned through thematic, inter-school debates. Here, you will directly compare how rival traditions contested the instruments of valid knowledge (<em>pramāṇa-vāda</em>), theories of perceptual error (<em>khyātivāda</em>), models of causation, and the path to liberation.</li>
 </ul>
-<h1 id="summary">Summary</h1>
-<p>The Indian Philosophy curriculum is a <strong>complete education in Indian Philosophy</strong> using online materials.</p>
-<h2 id="organization">Organization</h2>
-<p>This repository is organized into three main components:</p>
+<p>For each subject, you can treat comprehensive textbooks and video lectures as complementary tools: use the video courses for an accessible initial walkthrough of the concepts, and turn to the corresponding book chapters for structured textual analysis.</p>
+<h3 id="beyond-the-core">Beyond the Core</h3>
+<p>Once you have completed these foundational subjects, you can explore the other guides in this series to continue your studies:</p>
 <ul>
-<li><strong>Core Curriculum</strong> (this page): the foundational knowledge of the field;</li>
-<li><strong><a href="advanced_topics.html">Advanced Topics</a></strong>: focused study in specific areas;</li>
-<li><strong><a href="projects.html">Projects</a></strong>: support learning through practical application throughout the curriculum.</li>
+<li>Visit <a href="advanced_topics.html">Advanced Topics</a> to explore specialized tracks such as Navya-Nyāya formal logic, Buddhist nominalist semantics (<em>apoha-vāda</em>), late dialectical Advaita, and classical political realism.</li>
+<li>Browse <a href="extras/readings.html">Readings</a> for landmark primary texts, classical commentaries, and influential twentieth-century scholarly monographs.</li>
+<li>Explore <a href="extras/courses.html">Courses</a> for full-length audiovisual lecture series and university open courseware.</li>
 </ul>
-<p><strong>Process:</strong> Learners may work through the curriculum independently or collaboratively, and either sequentially or selectively.</p>
+<h3 id="communities">Communities</h3>
 <ul>
-<li>For simplicity, courses in the Core Curriculum are ordered according to their prerequisites.</li>
-<li>The Core Curriculum provides a shared foundation and is intended to be completed in full.</li>
-<li>Advanced Topics are optional; learners are encouraged to select one area of focus and complete all courses within that topic.</li>
+<li>You can interact through <a href="https://github.com/hocbigg/indian-philosophy/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
 </ul>
-<p>Practical work is integrated through the <a href="projects.html">Projects section</a> and may be undertaken alongside coursework.</p>
-<p>Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in <a href="extras/courses.html">extras/courses</a>, <a href="extras/readings.html">extras/readings</a>.</p>
-<p><strong><a href="/CONTRIBUTING.html">How to contribute</a></strong></p>
-<h1 id="communities">Communities</h1>
-<ul>
-<li>You can  interact through <a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/indian-philosophy/issues">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
-<li>
-<p>Join our Discord server (for discussions around this and other curricula): </p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/KHqAv4Nvm5"><img alt="discord link" src="/assets/discord.png" /></a></p>
-</li>
-</ul>
-<h1 id="curriculum">Curriculum</h1>
-<ul>
-<li><a href="#foundations-orientation-and-core-concepts">Foundations: Orientation and Core Concepts</a></li>
-<li><a href="#shared-philosophical-frameworks-cross-cutting">Shared Philosophical Frameworks Cross-Cutting</a></li>
-</ul>
-<h2 id="how-to-use-this-curriculum">How to use this curriculum</h2>
-<h3 id="core-sections">Core Sections</h3>
-<p>These sections give you the broad, coherent foundation needed to understand Indian Philosophy as a whole. Study them <strong>in this exact order</strong>:</p>
-<ol>
-<li>
-<p><strong>Foundations: Orientation and Core Concepts</strong><br />
-   Start here. This section introduces the basic vocabulary, historical context, and overall shape of the tradition.</p>
-</li>
-<li>
-<p><strong>Shared Philosophical Frameworks (Cross-Cutting)</strong><br />
-   Next, master the central ideas and methods (metaphysics, epistemology, ethics, karma, liberation) that almost every Indian school uses and debates. This is the glue that holds the whole field together.</p>
-</li>
-</ol>
-<h2 id="foundations-orientation-and-core-concepts">Foundations: Orientation and Core Concepts</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book/Text</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. What Is Philosophy in the Indian Context?</td>
-<td>Introduce darśana, mokṣa, śāstra, and philosophical method.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/IndianPhilosophyVol.1">S. Radhakrishnan – <em>Indian Philosophy, Vol. I</em> (Archive.org)</a></strong></td>
-</tr>
-<tr>
-<td>2. Historical Development of Indian Philosophy</td>
-<td>Chronological framework from Vedic to early modern period.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/in.gov.ignca.8897">Surendranath Dasgupta – <em>A History of Indian Philosophy, Vol. I</em> (Archive.org)</a></strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="shared-philosophical-frameworks-cross-cutting">Shared Philosophical Frameworks (Cross-Cutting)</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book/Text</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>3. Core Metaphysical Concepts (Brahman, Ātman, Prakṛti, Puruṣa, Śūnyatā)</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/IndianPhilosophyVol.1">Radhakrishnan – <em>Indian Philosophy, Vol. I</em> (Archive.org)</a></strong></td>
-<td></td>
-</tr>
-<tr>
-<td>4. Indian Epistemology (Pramāṇa Theory): Perception, inference, testimony, comparison</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/in.gov.ignca.8897">Dasgupta – <em>History of Indian Philosophy, Vol. I</em> (Archive.org)</a></strong> + (Supplement) Stanford Encyclopedia of Philosophy – Indian Epistemology</td>
-<td></td>
-</tr>
-<tr>
-<td>5. Ethics, Karma, and Liberation (Dharma, karma, saṃsāra, mokṣa)</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/indianphilosophy01hnan">Radhakrishnan – <em>Indian Philosophy, Vol. II</em> (Archive.org)</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://onlinecourses.swayam2.ac.in/nou23_hs84/preview">SWAYAM – Essentials of Indian Philosophy</a></strong></td>
-</tr>
-</tbody>
-</table>
-<h1 id="code-of-conduct">Code of conduct</h1>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/code-of-conduct">Hocbigg's code of conduct</a>.</p>
-</article>
-</main>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="nature-and-scope-of-indian-philosophy">Nature and Scope of Indian Philosophy</h3>
+<p>This subject introduces the defining characteristics of Indian philosophy, exploring its practical orientation toward liberation, the classification of schools (<em>darśanas</em>), and the role of foundational texts (<em>śāstras</em>).</p>
+<p><a href="https://archive.org/details/IntroductionToIndianPhilosophy" target="_blank" rel="noopener noreferrer">An Introduction to Indian Philosophy (University of Calcutta / Satischandra Chatterjee and Dhirendramohan Datta)</a> - A comprehensive open-access textbook whose introductory chapter outlines the shared assumptions, common terminology, and general outlook of the Indian philosophical tradition.</p>
+<p><a href="https://books.google.com/books?isbn=9780192853745" target="_blank" rel="noopener noreferrer">Indian Philosophy: A Very Short Introduction (Oxford University Press / Sue Hamilton)</a> - A concise, conceptually oriented alternative to Chatterjee and Datta that introduces beginners to the core concerns of Indian thinkers without excessive scholastic terminology.</p>
+<p><a href="https://nptel.ac.in/courses/109106059" target="_blank" rel="noopener noreferrer">Indian Philosophy (NPTEL / IIT Madras / Dr. Satya Sundar Sethy)</a> - A structured university video lecture series whose opening lectures provide an instructional overview of philosophical methods, terminology, and historical divisions.</p>
+<p><a href="https://historyofphilosophy.net/india" target="_blank" rel="noopener noreferrer">Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)</a> - A complementary audio lecture series that contextualizes Indian thought within the broader global history of ideas, beginning with introductory reflections on the tradition's aims.</p>
+<h3 id="vedic-and-upanisadic-foundations">Vedic and Upaniṣadic Foundations</h3>
+<p>This subject examines the foundational concepts of cosmic order (<em>ṛta</em>), ultimate reality (<em>brahman</em>), the inner self (<em>ātman</em>), and the historical emergence of the orthodox (<em>āstika</em>) and heterodox (<em>nāstika</em>) divide.</p>
+<p><a href="https://archive.org/details/in.ernet.dli.2015.506393" target="_blank" rel="noopener noreferrer">The Essentials of Indian Philosophy (George Allen &amp; Unwin / M. Hiriyanna)</a> - An open-access historical textbook whose opening chapters provide a lucid, foundational exposition of early Vedic thought and Upaniṣadic philosophy.</p>
+<p><a href="https://books.google.com/books?isbn=9780199540259" target="_blank" rel="noopener noreferrer">Upanisads (Oxford World's Classics / Patrick Olivelle)</a> - The canonical English translation of the principal Upaniṣads; study this primary source alongside Hiriyanna to examine key dialogues concerning Brahman and Ātman firsthand.</p>
+<p><a href="https://www.edx.org/learn/religion/harvard-university-hinduism-through-its-scriptures" target="_blank" rel="noopener noreferrer">Hinduism Through Its Scriptures (HarvardX / Parimal Patil)</a> - A free audit-mode course that provides complementary video lectures and guided textual readings on the Vedas, the Upaniṣads, and their enduring philosophical themes.</p>
+<h3 id="carvaka-materialism-and-epistemic-empiricism">Cārvāka: Materialism and Epistemic Empiricism</h3>
+<p>This subject explores the radical empiricism, metaphysical physicalism, skepticism regarding unperceived entities, and hedonistic ethics of the Cārvāka (Lokāyata) tradition.</p>
+<p><a href="https://archive.org/details/IntroductionToIndianPhilosophy" target="_blank" rel="noopener noreferrer">An Introduction to Indian Philosophy (University of Calcutta / Satischandra Chatterjee and Dhirendramohan Datta)</a> - Chapter 2 provides the primary reading for this topic, detailing Cārvāka’s critique of inference, rejection of an immortal soul, and ethical hedonism.</p>
+<p><a href="https://nptel.ac.in/courses/109106059" target="_blank" rel="noopener noreferrer">Indian Philosophy (NPTEL / IIT Madras / Dr. Satya Sundar Sethy)</a> - Lectures 3 and 4 serve as a direct lecture companion to the reading, analyzing how Cārvāka challenged orthodox epistemology and forced rival schools to refine their proofs for inference.</p>
+<p><a href="https://historyofphilosophy.net/india" target="_blank" rel="noopener noreferrer">Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)</a> - Episode 11 ("Mind the Gap: The Cārvākas") offers an accessible conversational overview examining why orthodox opponents took materialist challenges so seriously.</p>
+<h3 id="jaina-philosophy-pluralistic-realism-and-standpoint-epistemology">Jaina Philosophy: Pluralistic Realism and Standpoint Epistemology</h3>
+<p>This subject covers the Jaina dualism between conscious souls (<em>jīva</em>) and non-conscious entities (<em>ajīva</em>), the doctrine of multi-sided reality (<em>anekāntavāda</em>), the logic of qualified assertions (<em>syādvāda</em>), and ethical non-harm (<em>ahiṃsā</em>).</p>
+<p><a href="https://archive.org/details/IntroductionToIndianPhilosophy" target="_blank" rel="noopener noreferrer">An Introduction to Indian Philosophy (University of Calcutta / Satischandra Chatterjee and Dhirendramohan Datta)</a> - Chapter 3 provides the foundational textbook survey covering Jaina ontology, karmic bondage, and spiritual liberation.</p>
+<p><a href="https://nptel.ac.in/courses/109106059" target="_blank" rel="noopener noreferrer">Indian Philosophy (NPTEL / IIT Madras / Dr. Satya Sundar Sethy)</a> - Lectures 29 through 31 offer a structured academic exposition of Jaina epistemology, focusing on the sevenfold predication scheme (<em>saptabhaṅgī-naya</em>).</p>
+<p><a href="https://historyofphilosophy.net/india" target="_blank" rel="noopener noreferrer">Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)</a> - Episodes 12 through 14 serve as a conceptual audio companion, breaking down how Jaina standpoint epistemology resolves seemingly conflicting philosophical assertions.</p>
+<h3 id="buddhist-philosophy-dependent-origination-non-self-and-emptiness">Buddhist Philosophy: Dependent Origination, Non-Self, and Emptiness</h3>
+<p>This subject traces early Buddhist doctrines of suffering and causality, the reductionist analysis of personhood (<em>anattā</em> and the five <em>skandhas</em>), and the subsequent developments of Madhyamaka emptiness (<em>śūnyatā</em>) and Yogācāra consciousness-only metaphysics.</p>
+<p><a href="https://books.google.com/books?isbn=9781624669811" target="_blank" rel="noopener noreferrer">Buddhism as Philosophy: An Introduction (Hackett Publishing / Mark Siderits)</a> - The primary modern textbook for this subject, offering an analytically rigorous examination of Buddhist arguments from early Nikāya teachings to Mahāyāna schools.</p>
+<p><a href="https://archive.org/details/IntroductionToIndianPhilosophy" target="_blank" rel="noopener noreferrer">An Introduction to Indian Philosophy (University of Calcutta / Satischandra Chatterjee and Dhirendramohan Datta)</a> - Chapter 4 serves as an open-access foundational alternative to Siderits, offering a systematic historical overview of the Four Noble Truths and early philosophical schools.</p>
+<p><a href="https://historyofphilosophy.net/india" target="_blank" rel="noopener noreferrer">Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)</a> - Episodes 15 through 24 provide an expansive, complementary audio lecture sequence detailing the transition from early Abhidharma metaphysics to Nāgārjuna’s dialectic and Vasubandhu’s idealism.</p>
+<h3 id="nyaya-epistemology-logic-and-the-syllogism">Nyāya: Epistemology, Logic, and the Syllogism</h3>
+<p>This subject covers the Nyāya realistic epistemology, the validation of the four sources of knowledge (<em>pramāṇas</em>), the formal structure of the five-step inference (<em>anumāna</em>), and the taxonomy of fallacies (<em>hetvābhāsa</em>).</p>
+<p><a href="https://archive.org/details/TheNyayaTheoryOfKnowledge" target="_blank" rel="noopener noreferrer">The Nyaya Theory of Knowledge (University of Calcutta / Satischandra Chatterjee)</a> - A seminal, public-domain monograph that serves as the comprehensive core text for studying Nyāya theories of perception, inference, comparison, and testimony.</p>
+<p><a href="https://books.google.com/books?isbn=9780791437407" target="_blank" rel="noopener noreferrer">The Character of Logic in India (SUNY Press / Bimal Krishna Matilal)</a> - A concise, modern text that complements Chatterjee by analyzing the development of Indian debate rules, the nature of the inductive sign, and the formal structure of the Nyāya syllogism.</p>
+<p><a href="https://nptel.ac.in/courses/109106059" target="_blank" rel="noopener noreferrer">Indian Philosophy (NPTEL / IIT Madras / Dr. Satya Sundar Sethy)</a> - Lectures 15 through 20 deliver sequential classroom instruction illustrating the step-by-step operation of the five-membered Nyāya inferential argument.</p>
+<h3 id="vaisesika-categorical-ontology-and-atomism">Vaiśeṣika: Categorical Ontology and Atomism</h3>
+<p>This subject explores the Vaiśeṣika ontology of the seven categories of reality (<em>padārthas</em>), atomic pluralism, and the causal doctrine of the new production of effects (<em>asatkāryavāda</em>).</p>
+<p><a href="https://archive.org/details/IntroductionToIndianPhilosophy" target="_blank" rel="noopener noreferrer">An Introduction to Indian Philosophy (University of Calcutta / Satischandra Chatterjee and Dhirendramohan Datta)</a> - Chapter 6 acts as the core introductory reading, systematically categorizing substance, quality, action, generality, particularity, inherence, and non-existence.</p>
+<p><a href="https://nptel.ac.in/courses/109106059" target="_blank" rel="noopener noreferrer">Indian Philosophy (NPTEL / IIT Madras / Dr. Satya Sundar Sethy)</a> - Lectures 32 through 37 expand upon the reading with visual blackboard lectures detailing atomic combination and the mechanics of causation.</p>
+<p><a href="https://historyofphilosophy.net/india" target="_blank" rel="noopener noreferrer">Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)</a> - Episodes 29 through 31 provide an accessible companion discussion comparing Vaiśeṣika atomism and categorical realism with Western metaphysics.</p>
+<h3 id="samkhya-dualistic-metaphysics-and-cosmic-evolution">Sāṃkhya: Dualistic Metaphysics and Cosmic Evolution</h3>
+<p>This subject examines the metaphysical dualism between pure consciousness (<em>puruṣa</em>) and primordial matter (<em>prakṛti</em>), the three constitutive strands (<em>guṇas</em>), and the pre-existence of the effect within the cause (<em>satkāryavāda</em>).</p>
+<p><a href="https://archive.org/details/IntroductionToIndianPhilosophy" target="_blank" rel="noopener noreferrer">An Introduction to Indian Philosophy (University of Calcutta / Satischandra Chatterjee and Dhirendramohan Datta)</a> - Chapter 7 presents the foundational textual exposition of Sāṃkhya cosmic evolution, the nature of the intellect (<em>buddhi</em>), and the arguments establishing the existence of Puruṣa.</p>
+<p><a href="https://archive.org/details/in.ernet.dli.2015.506393" target="_blank" rel="noopener noreferrer">The Essentials of Indian Philosophy (George Allen &amp; Unwin / M. Hiriyanna)</a> - Chapter 5 offers a concise, complementary historical overview that clarifies how Sāṃkhya dualism differs from Cartesian dualism and prepares the conceptual ground for classical Yoga.</p>
+<p><a href="https://nptel.ac.in/courses/109106059" target="_blank" rel="noopener noreferrer">Indian Philosophy (NPTEL / IIT Madras / Dr. Satya Sundar Sethy)</a> - Lectures 5 through 10 provide an in-depth video lecture series explaining the Sāṃkhya proof for <em>satkāryavāda</em> and the teleological unfolding of nature.</p>
+<h3 id="classical-yoga-psychology-and-mental-discipline">Classical Yoga: Psychology and Mental Discipline</h3>
+<p>This subject addresses Patañjali’s system of psychological analysis, the cessation of mental fluctuations (<em>citta-vṛtti-nirodha</em>), the eight limbs of spiritual practice (<em>aṣṭāṅga-yoga</em>), and the attainment of absolute spiritual isolation (<em>kaivalya</em>).</p>
+<p><a href="https://books.google.com/books?isbn=9780865477360" target="_blank" rel="noopener noreferrer">The Yoga Sūtras of Patañjali: A New Edition, Translation, and Commentary (North Point Press / Edwin F. Bryant)</a> - The primary reference translation and guided commentary, offering exhaustive explanations drawing directly from classical commentators like Vyāsa and Vācaspati Miśra.</p>
+<p><a href="https://archive.org/details/IntroductionToIndianPhilosophy" target="_blank" rel="noopener noreferrer">An Introduction to Indian Philosophy (University of Calcutta / Satischandra Chatterjee and Dhirendramohan Datta)</a> - Chapter 8 serves as a free open-access summary for learners seeking a concise, non-technical overview of the eight limbs and the cognitive stages of concentration (<em>samādhi</em>).</p>
+<p><a href="https://nptel.ac.in/courses/109106059" target="_blank" rel="noopener noreferrer">Indian Philosophy (NPTEL / IIT Madras / Dr. Satya Sundar Sethy)</a> - Lectures 11 through 14 provide structured lectures explaining the relationship between Sāṃkhya metaphysics and Yoga's practical methods for calming mental modifications.</p>
+<h3 id="mimamsa-hermeneutics-language-and-epistemic-validity">Mīmāṃsā: Hermeneutics, Language, and Epistemic Validity</h3>
+<p>This subject examines Pūrva-Mīmāṃsā’s principles of textual interpretation, the eternal nature of the word-meaning relationship, the theory that cognitions are intrinsically valid (<em>svataḥ-prāmāṇyavāda</em>), and the nature of moral injunctions (<em>vidhi</em>).</p>
+<p><a href="https://archive.org/details/IntroductionToIndianPhilosophy" target="_blank" rel="noopener noreferrer">An Introduction to Indian Philosophy (University of Calcutta / Satischandra Chatterjee and Dhirendramohan Datta)</a> - Chapter 9 provides the core reading on Mīmāṃsā epistemology, analyzing the sources of knowledge accepted by the Bhāṭṭa and Prābhākara sub-schools.</p>
+<p><a href="https://nptel.ac.in/courses/109106059" target="_blank" rel="noopener noreferrer">Indian Philosophy (NPTEL / IIT Madras / Dr. Satya Sundar Sethy)</a> - Lectures 38 through 40 provide detailed video lectures contrasting how Kumārila Bhaṭṭa and Prabhākara explain the emergence and invalidation of erroneous beliefs.</p>
+<p><a href="https://historyofphilosophy.net/india" target="_blank" rel="noopener noreferrer">Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)</a> - Episodes 40 and 41 supply an intuitive audio introduction explaining why Mīmāṃsā philosophers defended the default validity of human cognition and scriptural authority.</p>
+<h3 id="vedanta-non-dualism-qualified-non-dualism-and-dualism">Vedānta: Non-Dualism, Qualified Non-Dualism, and Dualism</h3>
+<p>This subject explores the major theological and philosophical interpretations of the Upaniṣads and <em>Brahma Sūtras</em>, focusing on Śaṅkara’s absolute non-dualism (Advaita), Rāmānuja’s qualified non-dualism (Viśiṣṭādvaita), and Madhva’s dualism (Dvaita).</p>
+<p><a href="https://archive.org/details/in.ernet.dli.2015.506393" target="_blank" rel="noopener noreferrer">The Essentials of Indian Philosophy (George Allen &amp; Unwin / M. Hiriyanna)</a> - Chapters 7 and 8 serve as the primary foundational texts, clearly contrasting Śaṅkara’s doctrine of illusion (<em>māyā</em>) with theistic and realist Vedāntic schools.</p>
+<p><a href="https://archive.org/details/IntroductionToIndianPhilosophy" target="_blank" rel="noopener noreferrer">An Introduction to Indian Philosophy (University of Calcutta / Satischandra Chatterjee and Dhirendramohan Datta)</a> - Chapter 10 functions as an alternative, comprehensive reference detailing the distinct levels of reality (<em>paramārtha</em> vs. <em>vyavahāra</em>) in Advaita Vedānta.</p>
+<p><a href="https://historyofphilosophy.net/india" target="_blank" rel="noopener noreferrer">Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)</a> - Episodes 45 through 54 provide a thorough audio lecture series tracing the debate over whether the individual soul is identical to, an attribute of, or eternally distinct from the Divine.</p>
+<h3 id="comparative-indian-epistemology-pramanas-and-theories-of-error">Comparative Indian Epistemology: Pramāṇas and Theories of Error</h3>
+<p>This subject synthesizes knowledge across traditions by examining inter-school debates on what constitutes a valid instrument of knowing (<em>pramāṇa</em>), the definition of truth, and rival explanations of perceptual illusion (<em>khyātivāda</em>).</p>
+<p><a href="https://books.google.com/books?isbn=9780521618694" target="_blank" rel="noopener noreferrer">An Introduction to Indian Philosophy (Cambridge University Press / Roy W. Perrett)</a> - Chapter 2 provides the core reading for this subject, organizing classical epistemological controversies into modern analytical themes such as justification, perception, and testimony.</p>
+<p><a href="https://archive.org/details/TheSixWaysOfKnowing1960D.M.Datta" target="_blank" rel="noopener noreferrer">The Six Ways of Knowing: A Critical Study of the Advaita Theory of Knowledge (George Allen &amp; Unwin / Dhirendra Mohan Datta)</a> - A definitive open-access comparative work; read this sequentially after Perrett for exhaustive analyses of perception, inference, testimony, comparison, postulation (<em>arthāpatti</em>), and non-apprehension (<em>anupalabdhi</em>).</p>
+<p><a href="https://historyofphilosophy.net/india" target="_blank" rel="noopener noreferrer">Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)</a> - Episodes 28 and 30 serve as a lecture companion illustrating the high-stakes debates over whether knowledge can be acquired through testimony and how perceptual errors are recognized.</p>
+<h3 id="comparative-metaphysics-self-causality-and-world">Comparative Metaphysics: Self, Causality, and World</h3>
+<p>This subject investigates the central metaphysical disputes running through classical Indian thought, particularly the substantial self (<em>ātman</em>) versus no-self (<em>anattā</em>) debate and rival models of causation (<em>satkāryavāda</em>, <em>asatkāryavāda</em>, and <em>pratītyasamutpāda</em>).</p>
+<p><a href="https://books.google.com/books?isbn=9780521618694" target="_blank" rel="noopener noreferrer">An Introduction to Indian Philosophy (Cambridge University Press / Roy W. Perrett)</a> - Chapter 3 serves as the primary modern text, comparing Buddhist reductionism, Nyāya substance ontology, and Vedāntic non-dualism regarding personal identity and universal causation.</p>
+<p><a href="https://archive.org/details/in.gov.ignca.8889" target="_blank" rel="noopener noreferrer">Outlines of Indian Philosophy (George Allen &amp; Unwin / M. Hiriyanna)</a> - An open-access classic that provides a complementary historical treatment tracking how different causal doctrines directly shaped each school's view of liberation.</p>
+<p><a href="https://historyofphilosophy.net/india" target="_blank" rel="noopener noreferrer">Classical Indian Philosophy (History of Philosophy Without Any Gaps / Peter Adamson and Jonardon Ganeri)</a> - Episodes 26 and 30 provide a lively audio discussion exploring the dialectical battle lines drawn between Buddhist nominalists and Brahmanical essentialists.</p>
+<h3 id="ethics-action-and-liberation-dharma-karma-and-moksa">Ethics, Action, and Liberation: Dharma, Karma, and Mokṣa</h3>
+<p>This subject evaluates classical Indian moral and spiritual values, focusing on the four human goals (<em>puruṣārthas</em>), the mechanics of moral consequence (<em>karma</em>), duties (<em>dharma</em>), and differing models of spiritual liberation (<em>mokṣa</em>, <em>nirvāṇa</em>, and <em>kaivalya</em>).</p>
+<p><a href="https://books.google.com/books?isbn=9780824820855" target="_blank" rel="noopener noreferrer">Hindu Ethics: A Philosophical Study (University of Hawaii Press / Roy W. Perrett)</a> - The core text for this subject, examining the philosophical coherence of karma, the duties of the social order (<em>svadharma</em>), and the ethical justification for ascetic renunciation.</p>
+<p><a href="https://archive.org/details/in.gov.ignca.8889" target="_blank" rel="noopener noreferrer">Outlines of Indian Philosophy (George Allen &amp; Unwin / M. Hiriyanna)</a> - The concluding chapters serve as an open-access resource surveying the various ideals of life, comparing the living liberation (<em>jīvanmukti</em>) of Advaita with the isolation (<em>kaivalya</em>) of Yoga and the cessation of suffering (<em>nirvāṇa</em>) in Buddhism.</p>
+<p><a href="https://www.edx.org/learn/religion/harvard-university-hinduism-through-its-scriptures" target="_blank" rel="noopener noreferrer">Hinduism Through Its Scriptures (HarvardX / Parimal Patil)</a> - The course modules on the <em>Bhagavad Gītā</em> offer a video-based companion that explores the synthesis of duty, knowledge, and selfless action (<em>niṣkāma karma</em>).</p>
+    </article>
+  </main>
 
 </body>
 </html>

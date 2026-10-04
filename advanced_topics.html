@@ -1,144 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Advanced Topics</title>
-<link rel="stylesheet" href="/indian-philosophy/style.css">
-<meta name="description" content="">
+  <title>Advanced Topics</title>
+  <meta name="description" content="Advanced Topics curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/indian-philosophy/">
+  <link rel="canonical" href="https://hocbigg.github.io/indian-philosophy/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics">
+  <meta property="og:description" content="Advanced Topics curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/indian-philosophy/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Advanced Topics">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/indian-philosophy/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/indian-philosophy/">Indian-Philosophy</a>
-<a href="/indian-philosophy/advanced_topics.html">Advanced Topics</a>
-<a href="/indian-philosophy/projects.html">Projects</a>
-<a href="/indian-philosophy/extras/courses.html">Extra Courses</a>
-<a href="/indian-philosophy/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/indian-philosophy/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/indian-philosophy/">Indian Philosophy</a></li>
+      <li><a href="/indian-philosophy/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/indian-philosophy/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/indian-philosophy/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/indian-philosophy" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="advanced-topics">Advanced Topics</h1>
+<p>Learners who have mastered the foundational core are expected to select one or two specialization tracks aligned with their intellectual or research goals—not to complete every track sequentially.</p>
 <ul>
-<li><a href="#classical-%C4%81stika-orthodox-systems">Classical Āstika Orthodox Systems</a></li>
-<li><a href="#classical-n%C4%81stika-heterodox-systems">Classical Nāstika Heterodox Systems</a></li>
-<li><a href="#later-developments-and-comparative-perspectives">Later Developments and Comparative Perspectives</a></li>
+<li><strong><a href="#advanced-epistemology-logic-and-navya-nyāya">Advanced Epistemology, Logic, and Navya-Nyāya</a>:</strong> Explores formal theories of inference, epistemic justification, radical nominalism, and the technical language of late classical scholastic logic.</li>
+<li><strong><a href="#philosophy-of-language-semantics-and-hermeneutics">Philosophy of Language, Semantics, and Hermeneutics</a>:</strong> Investigates sentence-meaning holism, compositionality, negative semantics (<em>apoha</em>), and aesthetic suggestion (<em>rasa-dhvani</em>).</li>
+<li><strong><a href="#advanced-metaphysics-philosophy-of-mind-and-non-dualisms">Advanced Metaphysics, Philosophy of Mind, and Non-Dualisms</a>:</strong> Analyzes Madhyamaka anti-foundationalism, Yogācāra phenomenology, late dialectical Advaita, and Kashmiri Pratyabhijñā monism.</li>
+<li><strong><a href="#moral-legal-and-political-philosophy">Moral, Legal, and Political Philosophy</a>:</strong> Examines epic moral dilemmas, classical political realism (<em>arthaśāstra</em>), modern anti-colonial thought, and caste critique.</li>
+<li><strong><a href="#cross-cultural-analytic-and-contemporary-engagements">Cross-Cultural, Analytic, and Contemporary Engagements</a>:</strong> Bridges classical Indian models of mind, knowledge, and rationality with modern cognitive science, analytic epistemology, and postcolonial metaphilosophy.</li>
 </ul>
-<p>After finishing the Core (sections I and II), you reach the point where the roadmap branches. The remaining sections are <strong>specialization tracks</strong> that explore specific schools, periods, or comparative angles in much greater depth.</p>
-<ul>
-<li><strong>Classical Āstika (Orthodox) Systems</strong>: Dive into the six major “orthodox” schools (Nyāya-Vaiśeṣika, Sāṃkhya-Yoga, Mīmāṃsā, Vedānta) that accept Vedic authority.</li>
-<li><strong>Classical Nāstika (Heterodox) Systems</strong>: Explore the major traditions that reject Vedic authority (mainly Buddhism, Jainism, Cārvāka materialism).</li>
-<li><strong>Later Developments and Comparative Perspectives</strong>: Look at medieval debate traditions, modern Indian thinkers (19th–20th century), and conversations between Indian and Western philosophy.</li>
-</ul>
-<h2 id="classical-astika-orthodox-systems">Classical Āstika (Orthodox) Systems</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book/Text</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>6. Nyāya and Vaiśeṣika: Logic, ontology, debate</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/the-nyaya-sutras-of-gautama-with-english-notes-1-ganganatha-jha"><em>Nyāya Sūtra</em> (Archive.org – English translation by Ganganatha Jha)</a></strong></td>
-<td></td>
-</tr>
-<tr>
-<td>7. Sāṃkhya and Yoga: Dualism, cosmology, liberation praxis</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/sourcebookinindi00radh">Radhakrishnan &amp; Moore – <em>A Source Book in Indian Philosophy</em> (Archive.org)</a></strong></td>
-<td></td>
-</tr>
-<tr>
-<td>8. Mīmāṃsā: Ritual, language, hermeneutics</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/in.gov.ignca.8897">Dasgupta – <em>History of Indian Philosophy, Vol. I</em> (Archive.org)</a></strong></td>
-<td>Introduction to Mīmāṃsā (YouTube – Banaras Hindu University)</td>
-</tr>
-<tr>
-<td>9. Vedānta (Survey): Advaita, Viśiṣṭādvaita, Dvaita</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/in.ernet.dli.2015.150038">Dasgupta – <em>History of Indian Philosophy, Vol. III</em> (Archive.org)</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLkBHn0LCZEgiaVDQCz21Tfs8BVfWU8X_g">Introduction to Vedānta Philosophy playlist (YouTube – various scholarly series)</a></strong> (related Upanishads/Vedanta intro series)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="classical-nastika-heterodox-systems">Classical Nāstika (Heterodox) Systems</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book/Text</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>10. Buddhism: Foundations: Four Noble Truths, no-self, impermanence</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/NagarjunaTheFundamentalWisdomOfTheMiddleWay"><em>The Fundamental Wisdom of the Middle Way</em> (Nāgārjuna) (Archive.org – Garfield translation)</a></strong></td>
-<td></td>
-</tr>
-<tr>
-<td>11. Buddhist Schools: Madhyamaka, Yogācāra</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://historyofphilosophy.net/series/classical-indian-philosophy">History of Philosophy Without Any Gaps – Classical Indian Philosophy</a></strong></td>
-<td></td>
-</tr>
-<tr>
-<td>12. Jain Philosophy: Anekāntavāda, syādvāda, ethics</td>
-<td>(Reference) <strong><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/jaina-philosophy/">Stanford Encyclopedia of Philosophy – Jain Philosophy</a></strong></td>
-<td></td>
-</tr>
-<tr>
-<td>13. Cārvāka (Materialism): Skepticism, empiricism</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/sourcebookinindi00radh">Source Book in Indian Philosophy (relevant sections – Archive.org)</a></strong></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="later-developments-and-comparative-perspectives">Later Developments and Comparative Perspectives</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book/Text</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>14. Logic and Debate Traditions: Vāda, hetvābhāsa, inter-school polemics</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/the-nyaya-sutras-of-gautama-with-english-notes-1-ganganatha-jha">Nyāya Sūtra (commentarial sections – Archive.org)</a></strong></td>
-<td></td>
-</tr>
-<tr>
-<td>15. Modern Indian Philosophy: Vivekananda, Aurobindo, Gandhi, Tagore</td>
-<td>(Reference) Internet Encyclopedia of Philosophy – Modern Indian Philosophy</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://onlinecourses.nptel.ac.in/noc24_hs75/preview">NPTEL – Philosophy and Critical Thinking</a></strong> (includes modern perspectives)</td>
-</tr>
-<tr>
-<td>16. Comparative Indian Philosophy: Indian philosophy in dialogue with Greek and modern Western thought</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://historyofphilosophy.net/series/classical-indian-philosophy">History of Philosophy Without Any Gaps – India &amp; Beyond</a></strong></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+<h2 id="advanced-epistemology-logic-and-navya-nyaya">Advanced Epistemology, Logic, and Navya-Nyāya</h2>
+<p>This track covers the formal development of classical Indian epistemology and logic, emphasizing late scholastic innovations, the Buddhist critique of realism, and technical theories of inference.</p>
+<p>Pramāṇa Theory, Factivism, and Justification: <a href="https://books.google.com/books?isbn=9781138008816" target="_blank" rel="noopener noreferrer">Epistemology in Classical India: The Knowledge Sources of the Nyāya School (Stephen Phillips / Routledge)</a> - Analyzes Nyāya reliabilist and factivist models of knowledge, epistemic instrumenthood, and the classical debate between intrinsic and extrinsic justification.</p>
+<p>The Buddhist Epistemological Revolution: <a href="https://books.google.com/books?isbn=9780791430989" target="_blank" rel="noopener noreferrer">Recognizing Reality: Dharmakīrti's Philosophy and Its Tibetan Interpretations (Georges B. J. Dreyfus / SUNY Press)</a> - Examines Dignāga and Dharmakīrti’s radical nominalist epistemology, the reduction of knowledge sources to perception and inference, and the causal criterion of reality.</p>
+<p>Navya-Nyāya Formal Logic: <a href="https://books.google.com/books?isbn=9788120803848" target="_blank" rel="noopener noreferrer">Materials for the Study of Navya-Nyāya Logic (Daniel H. H. Ingalls / Harvard University Press)</a> - Introduces the formal technical syntax, relational abstractions, and pervasion theories (<em>vyāpti</em>) developed by Gaṅgeśa to eliminate linguistic ambiguity in scholastic debate.</p>
+<p>Theories of Perceptual Error: <a href="https://books.google.com/books?isbn=9780198246251" target="_blank" rel="noopener noreferrer">Perception: An Essay on Classical Indian Theories of Knowledge (Bimal Krishna Matilal / Oxford Clarendon Press)</a> - Provides a foundational analytical study of classical theories of illusion (<em>khyātivāda</em>), direct realism, and the intentionality of misperception.</p>
+<h2 id="philosophy-of-language-semantics-and-hermeneutics">Philosophy of Language, Semantics, and Hermeneutics</h2>
+<p>This track investigates Sanskrit philosophical analyses of meaning, word-world relations, compositional semantics, negative reference, and aesthetic suggestion.</p>
+<p>The Sphoṭa Doctrine and Linguistic Monism: <a href="https://books.google.com/books?isbn=9780195625158" target="_blank" rel="noopener noreferrer">The Word and the World: India's Contribution to the Study of Language (Bimal Krishna Matilal / Oxford University Press)</a> - Explores Bhartṛhari's linguistic metaphysics (<em>Śabda-brahman</em>), sentence-meaning holism, and the philosophical inseparability of thought and word.</p>
+<p>Mīmāṃsā Hermeneutics and Compositionality: <a href="https://archive.org/details/indiantheoriesof0000kunj" target="_blank" rel="noopener noreferrer">Indian Theories of Meaning (K. Kunjunni Raja / Adyar Library and Research Centre)</a> - A comprehensive open-access study comparing the Prabhākara and Bhāṭṭa debates on whether words convey independent referents prior to syntactical connection.</p>
+<p>Buddhist Nominalism and Negative Semantics: <a href="https://books.google.com/books?isbn=9780231153614" target="_blank" rel="noopener noreferrer">Apoha: Buddhist Nominalism and Human Cognition (Mark Siderits, Tom Tillemans, and Arindam Chakrabarti, eds. / Columbia University Press)</a> - Investigates how Buddhist logicians construct conceptual categories and general terms entirely through differential exclusion (<em>anyāpoha</em>) without positing real universals.</p>
+<p>Sanskrit Poetics and Aesthetic Suggestion: <a href="https://books.google.com/books?isbn=9780674207806" target="_blank" rel="noopener noreferrer">The Dhvanyāloka with the Locana (Ānandavardhana and Abhinavagupta, trans. Daniel H. H. Ingalls, J. M. Masson, and M. V. Patwardhan / Harvard University Press)</a> - Translates and comments on the foundational texts of aesthetic theory, showing how poetic suggestion (<em>dhvani</em>) produces aesthetic resonance (<em>rasa</em>) beyond literal semantics.</p>
+<h2 id="advanced-metaphysics-philosophy-of-mind-and-non-dualisms">Advanced Metaphysics, Philosophy of Mind, and Non-Dualisms</h2>
+<p>This track explores radical metaphysical anti-essentialism, Buddhist phenomenological psychology, dialectical non-dualism, and dynamic monism.</p>
+<p>Madhyamaka Dialectic and Anti-Essentialism: <a href="https://books.google.com/books?isbn=9780195384963" target="_blank" rel="noopener noreferrer">Nāgārjuna's Metaphysics: A Philosophical Investigation (Jan Westerhoff / Oxford University Press)</a> - Systematically reconstructs Nāgārjuna's critique of intrinsic nature (<em>svabhāva</em>), the Two Truths doctrine, and ontological anti-foundationalism.</p>
+<p>Yogācāra Phenomenology and Reflexive Awareness: <a href="https://books.google.com/books?isbn=9780190253110" target="_blank" rel="noopener noreferrer">Perceiving Reality: Consciousness, Intentionality, and Cognition in Buddhist Philosophy (Christian Coseru / Oxford University Press)</a> - Connects Yogācāra models of mind-only (<em>vijñaptimātra</em>), the storehouse consciousness (<em>ālayavijñāna</em>), and reflexive awareness (<em>svasaṃvedana</em>) with contemporary phenomenology.</p>
+<p>Dialectical Advaita and the Critique of Realism: <a href="https://books.google.com/books?isbn=9789400998247" target="_blank" rel="noopener noreferrer">Philosophy and Argument in Late Vedānta: Śrī Harṣa's Khaṇḍanakhaṇḍakhādya (Phyllis Granoff / Reidel)</a> - Analyzes Śrīharṣa's negative dialectic, which systematically demolishes Nyāya realist definitions of knowledge and difference to establish non-dualism.</p>
+<p>Pratyabhijñā Dynamic Monism: <a href="https://books.google.com/books?isbn=9780791440582" target="_blank" rel="noopener noreferrer">Rediscovering God with Transcendental Argument: A Contemporary Interpretation of Monistic Kashmiri Śaiva Philosophy (David Peter Lawrence / SUNY Press)</a> - Explores Utpaladeva and Abhinavagupta’s synthesis of non-dual consciousness (<em>prakāśa</em>) with dynamic, self-reflective power (<em>vimarśa</em>).</p>
+<h2 id="moral-legal-and-political-philosophy">Moral, Legal, and Political Philosophy</h2>
+<p>This track examines moral conflicts in narrative literature, classical treatises on political realism and jurisprudence, modern anti-colonial frameworks, and radical caste critiques.</p>
+<p>Epic Dilemmas and Practical Ethics: <a href="https://books.google.com/books?isbn=9780195655117" target="_blank" rel="noopener noreferrer">Ethics and Epics: The Collected Essays of Bimal Krishna Matilal, Vol. II (Bimal Krishna Matilal / Oxford University Press)</a> - Evaluates moral conflict (<em>dharma-saṃkaṭa</em>), moral luck, and ethical ambiguity through critical readings of the <em>Mahābhārata</em>.</p>
+<p>Political Realism and Governance: <a href="https://books.google.com/books?isbn=9780199891825" target="_blank" rel="noopener noreferrer">King, Governance, and Law in Ancient India: Kauṭilya's Arthaśāstra (Kauṭilya, trans. Patrick Olivelle / Oxford University Press)</a> - An authoritative translation and analysis of classical Indian statecraft, political pragmatism, espionage systems, and interstate relations (<em>maṇḍala</em> theory).</p>
+<p>Modern Indian Political Thought: <a href="https://nptel.ac.in/courses/109103135" target="_blank" rel="noopener noreferrer">Introduction to Modern Indian Political Thought (NPTEL / IIT Guwahati / Prof. Mithilesh Kumar Jha)</a> - A 30-lecture university course examining how thinkers from Rammohan Roy to Gandhi, Tagore, and Lohia re-articulated autonomy, nationalism, and <em>swaraj</em>.</p>
+<p>Caste Critique and Social Justice: <a href="https://books.google.com/books?isbn=9781781688311" target="_blank" rel="noopener noreferrer">Annihilation of Caste: The Annotated Critical Edition (B. R. Ambedkar, ed. S. Anand / Verso)</a> - A seminal twentieth-century critique deconstructing the metaphysical and scriptural rationalizations for caste hierarchy while arguing for constitutional democracy and fraternity.</p>
+<p>Caste Critique and Social Justice: <a href="https://ccnmtl.columbia.edu/projects/mmt/ambedkar/web/index.html" target="_blank" rel="noopener noreferrer">The Annihilation of Caste (Dr. B. R. Ambedkar / Columbia Center for Teaching and Learning)</a> - A freely accessible online study edition of Ambedkar's core address, accompanied by textual annotations and historical documentation.</p>
+<h2 id="cross-cultural-analytic-and-contemporary-engagements">Cross-Cultural, Analytic, and Contemporary Engagements</h2>
+<p>This track places classical Indian philosophical insights into dialogue with modern analytic epistemology, cognitive neuroscience, philosophy of mind, and decolonial historiography.</p>
+<p>Self, Consciousness, and Cognitive Science: <a href="https://books.google.com/books?isbn=9780231137096" target="_blank" rel="noopener noreferrer">Waking, Dreaming, Being: Self and Consciousness in Neuroscience, Meditation, and Philosophy (Evan Thompson / Columbia University Press)</a> - Integrates classical Indian debates on consciousness and the self (Nyāya, Advaita, and Buddhism) with cognitive neuroscience and phenomenological philosophy of mind.</p>
+<p>Self, Consciousness, and Cognitive Science: <a href="https://nptel.ac.in/courses/109101004" target="_blank" rel="noopener noreferrer">Contemporary Issues in Philosophy of Mind &amp; Cognition (NPTEL / IIT Bombay / Prof. Ranjan K. Panda and Prof. Rajakishore Nath)</a> - A 42-lecture university video course bridging Indian models of consciousness from the Upaniṣads with modern functionalism, intentionality, and artificial intelligence.</p>
+<p>Comparative Analytic Epistemology: <a href="https://books.google.com/books?isbn=9781350085350" target="_blank" rel="noopener noreferrer">Realisms Interlinked: Objects, Subjects and Other Subjects (Arindam Chakrabarti / Bloomsbury Academic)</a> - Brings classical Indian realism into direct conversation with contemporary Western problems of perception, other minds, and indexicality.</p>
+<p>Rationality and Decolonial Historiography: <a href="https://books.google.com/books?isbn=9780415264341" target="_blank" rel="noopener noreferrer">Philosophy in Classical India: The Proper Work of Reason (Jonardon Ganeri / Routledge)</a> - Reconstructs classical Indian philosophy as an argumentative culture of rational inquiry, dismantling colonial assumptions of Indian thought as purely mystical.</p>
+<p>Contemporary Critique of Traditional Categories: <a href="https://books.google.com/books?isbn=9780195626629" target="_blank" rel="noopener noreferrer">Indian Philosophy: A Counter Perspective (Daya Krishna / Oxford University Press)</a> - A modern critical work that deconstructs standard textbook narratives, demonstrating that classical Indian thought was dynamic, pluralistic, and never tethered solely to spiritual liberation.</p>
+    </article>
+  </main>
 
 </body>
 </html>

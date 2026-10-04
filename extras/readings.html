@@ -1,108 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Great Readings</title>
-<link rel="stylesheet" href="/indian-philosophy/style.css">
-<meta name="description" content="">
+  <title>Great Readings</title>
+  <meta name="description" content="Great Readings curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/indian-philosophy/">
+  <link rel="canonical" href="https://hocbigg.github.io/indian-philosophy/extras/readings.html">
+  <meta property="og:title" content="Great Readings">
+  <meta property="og:description" content="Great Readings curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/indian-philosophy/extras/readings.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Great Readings">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/indian-philosophy/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/indian-philosophy/">Indian-Philosophy</a>
-<a href="/indian-philosophy/advanced_topics.html">Advanced Topics</a>
-<a href="/indian-philosophy/projects.html">Projects</a>
-<a href="/indian-philosophy/extras/courses.html">Extra Courses</a>
-<a href="/indian-philosophy/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/indian-philosophy/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/indian-philosophy/">Indian Philosophy</a></li>
+      <li><a href="/indian-philosophy/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/indian-philosophy/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/indian-philosophy/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/indian-philosophy" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="great-readings">Great Readings</h1>
-<p>This document consists of great books or articles on Indian Philosophy.
-Some are here because there is a course covering the same material;
-some are just great books that you should read at some point in your career.</p>
-<p>Once you have made it through most of the curriculum, knowing whether a book is worth your time will become easier.
-Or, if you are struggling in one of the courses, perhaps reading a book on the subject will help.</p>
-<h2 id="general-overviews">General Overviews</h2>
-<table>
+<p>A curated collection of field-defining primary texts, groundbreaking monographs, and seminal philosophical investigations in Indian philosophy. These works demonstrate how classical and modern thinkers formulated paradigms, constructed formal logical systems, and challenged conventional views.</p>
+<h2 id="epistemology-and-logic">Epistemology and Logic</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/essentials-of-indian-philosophy-m-hiriyanna">The Essentials of Indian Philosophy</a></td>
-<td style="text-align: center;">M. Hiriyanna</td>
+<td><a href="https://books.google.com/books?isbn=9788120812642" target="_blank" rel="noopener noreferrer"><em>The Nyāya-Sūtras of Gautama with the Commentary of Vātsyāyana</em></a></td>
+<td>Gautama and Vātsyāyana (Trans. Ganganatha Jha)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/outlines-of-indian-philosophy-m-hiriyanna">Outlines of Indian Philosophy</a></td>
-<td style="text-align: center;">M. Hiriyanna</td>
+<td><a href="https://archive.org/details/TheNyayaTheoryOfKnowledge" target="_blank" rel="noopener noreferrer"><em>The Nyāya Theory of Knowledge</em></a></td>
+<td>Satischandra Chatterjee</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Philosophies-India-Heinrich-Robert-Zimmer/dp/0691017581">Philosophies of India</a></td>
-<td style="text-align: center;">Heinrich Zimmer</td>
+<td><a href="https://books.google.com/books?isbn=9780198246251" target="_blank" rel="noopener noreferrer"><em>Perception: An Essay on Classical Indian Theories of Knowledge</em></a></td>
+<td>Bimal Krishna Matilal</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780791437407" target="_blank" rel="noopener noreferrer"><em>The Character of Logic in India</em></a></td>
+<td>Bimal Krishna Matilal (Eds. Jonardon Ganeri and Heeraman Tiwari)</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780791430989" target="_blank" rel="noopener noreferrer"><em>Recognizing Reality: Dharmakīrti's Philosophy and Its Tibetan Interpretations</em></a></td>
+<td>Georges B. J. Dreyfus</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9781138008816" target="_blank" rel="noopener noreferrer"><em>Epistemology in Classical India: The Knowledge Sources of the Nyāya School</em></a></td>
+<td>Stephen H. Phillips</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9788120803848" target="_blank" rel="noopener noreferrer"><em>Materials for the Study of Navya-Nyāya Logic</em></a></td>
+<td>Daniel H. H. Ingalls</td>
 </tr>
 </tbody>
-</table>
-<h2 id="historical-and-comprehensive">Historical and Comprehensive</h2>
-<table>
+</table></div>
+<h2 id="philosophy-of-language-and-hermeneutics">Philosophy of Language and Hermeneutics</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Critical-Survey-Indian-Philosophy/dp/8120803655">A Critical Survey of Indian Philosophy</a></td>
-<td style="text-align: center;">Chandradhar Sharma</td>
+<td><a href="https://books.google.com/books?isbn=9780195625158" target="_blank" rel="noopener noreferrer"><em>The Word and the World: India's Contribution to the Study of Language</em></a></td>
+<td>Bimal Krishna Matilal</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/sixsystemsofindi00mull">The Six Systems of Indian Philosophy</a></td>
-<td style="text-align: center;">F. Max Müller</td>
+<td><a href="https://archive.org/details/indiantheoriesof0000kunj" target="_blank" rel="noopener noreferrer"><em>Indian Theories of Meaning</em></a></td>
+<td>K. Kunjunni Raja</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9788120829886" target="_blank" rel="noopener noreferrer"><em>The Vākyapadīya of Bhartṛhari (Kāṇḍa II)</em></a></td>
+<td>Bhartṛhari (Trans. K. A. Subramania Iyer)</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780231153614" target="_blank" rel="noopener noreferrer"><em>Apoha: Buddhist Nominalism and Human Cognition</em></a></td>
+<td>Mark Siderits, Tom Tillemans, and Arindam Chakrabarti (Eds.)</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/dhvanyalokaofana0000anan" target="_blank" rel="noopener noreferrer"><em>The Dhvanyāloka of Ānandavardhana with the Locana of Abhinavagupta</em></a></td>
+<td>Ānandavardhana and Abhinavagupta (Trans. Daniel H. H. Ingalls, Jeffrey M. Masson, and M. V. Patwardhan)</td>
 </tr>
 </tbody>
-</table>
-<h2 id="comparative-and-modern">Comparative and Modern</h2>
-<table>
+</table></div>
+<h2 id="metaphysics-consciousness-and-non-dualisms">Metaphysics, Consciousness, and Non-Dualisms</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Shape-Ancient-Thought-Comparative-Philosophies/dp/1581152035">The Shape of Ancient Thought</a></td>
-<td style="text-align: center;">Thomas McEvilley</td>
+<td><a href="https://archive.org/details/in.ernet.dli.2015.148291" target="_blank" rel="noopener noreferrer"><em>The Principal Upaniṣads</em></a></td>
+<td>S. Radhakrishnan (Ed. &amp; Trans.)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Contemporary-Indian-Philosophy-Basant-Kumar/dp/812080385X">Contemporary Indian Philosophy</a></td>
-<td style="text-align: center;">Basant Kumar Lal</td>
+<td><a href="https://books.google.com/books?isbn=9780195093360" target="_blank" rel="noopener noreferrer"><em>Mūlamadhyamakakārikā (The Fundamental Wisdom of the Middle Way)</em></a></td>
+<td>Nāgārjuna (Trans. Jay L. Garfield)</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/brahmasutrabhasy0000sank" target="_blank" rel="noopener noreferrer"><em>Brahma-Sūtra-Bhāṣya of Śrī Śaṅkarācārya</em></a></td>
+<td>Śaṅkarācārya (Trans. Swami Gambhirananda)</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780195384963" target="_blank" rel="noopener noreferrer"><em>Nāgārjuna's Madhyamaka: A Philosophical Introduction</em></a></td>
+<td>Jan Westerhoff</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780199202416" target="_blank" rel="noopener noreferrer"><em>The Concealed Art of the Soul: Theories of Self and Practices of Truth in Indian Ethics and Epistemology</em></a></td>
+<td>Jonardon Ganeri</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780415406109" target="_blank" rel="noopener noreferrer"><em>Buddhist Phenomenology: A Philosophical Investigation of Yogācāra Buddhism</em></a></td>
+<td>Dan Lusthaus</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9788120818675" target="_blank" rel="noopener noreferrer"><em>The Īśvarapratyabhijñākārikā of Utpaladeva with the Author's Vṛtti</em></a></td>
+<td>Utpaladeva (Trans. Raffaele Torella)</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780190253110" target="_blank" rel="noopener noreferrer"><em>Perceiving Reality: Consciousness, Intentionality, and Cognition in Buddhist Philosophy</em></a></td>
+<td>Christian Coseru</td>
 </tr>
 </tbody>
-</table>
-</article>
-</main>
+</table></div>
+<h2 id="moral-legal-and-political-philosophy">Moral, Legal, and Political Philosophy</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780195655117" target="_blank" rel="noopener noreferrer"><em>Ethics and Epics: The Collected Essays of Bimal Krishna Matilal, Vol. II</em></a></td>
+<td>Bimal Krishna Matilal (Ed. Jonardon Ganeri)</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/kinggovernancela0000kaut" target="_blank" rel="noopener noreferrer"><em>King, Governance, and Law in Ancient India: Kauṭilya's Arthaśāstra</em></a></td>
+<td>Kauṭilya (Trans. Patrick Olivelle)</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/in.ernet.dli.2015.71655" target="_blank" rel="noopener noreferrer"><em>Annihilation of Caste</em></a></td>
+<td>B. R. Ambedkar</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/in.ernet.dli.2015.204695" target="_blank" rel="noopener noreferrer"><em>Hind Swaraj and Other Writings</em></a></td>
+<td>M. K. Gandhi (Ed. Anthony J. Parel)</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780824820855" target="_blank" rel="noopener noreferrer"><em>Hindu Ethics: A Philosophical Study</em></a></td>
+<td>Roy W. Perrett</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="cross-cultural-analytic-and-contemporary-engagements">Cross-Cultural, Analytic, and Contemporary Engagements</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780199652365" target="_blank" rel="noopener noreferrer"><em>The Self: Naturalism, Consciousness, and the First-Person Stance</em></a></td>
+<td>Jonardon Ganeri</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780231137096" target="_blank" rel="noopener noreferrer"><em>Waking, Dreaming, Being: Self and Consciousness in Neuroscience, Meditation, and Philosophy</em></a></td>
+<td>Evan Thompson</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780195638370" target="_blank" rel="noopener noreferrer"><em>Indian Philosophy: A Counter Perspective</em></a></td>
+<td>Daya Krishna</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/philosophyinclassicalindiatheproperworkofreasonjonardonganeriroutledge_202003_417_A" target="_blank" rel="noopener noreferrer"><em>Philosophy in Classical India: The Proper Work of Reason</em></a></td>
+<td>Jonardon Ganeri</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9781350044463" target="_blank" rel="noopener noreferrer"><em>Realisms Interlinked: Objects, Subjects, and Other Subjects</em></a></td>
+<td>Arindam Chakrabarti</td>
+</tr>
+</tbody>
+</table></div>
+    </article>
+  </main>
 
 </body>
 </html>
